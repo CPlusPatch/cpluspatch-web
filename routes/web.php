@@ -19,7 +19,7 @@ Route::get("/socials", function() {
 });
 Route::get('/cdn/{filename}', function ($filename)
 {
-    $path = storage_path($filename);
+    $path = public_path() . "/cdn/" . $filename;
 
     if (!File::exists($path)) {
         abort(404);
