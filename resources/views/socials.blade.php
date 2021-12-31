@@ -16,7 +16,7 @@
 	@include("components.socials.profile", ["url" => "#", "logo" => "/cdn/twitter.png", "name" => "Twitter", "username" => "CPlusPatch", "copy" => "https://twitter.com/CPlusPatch"])
 	@include("components.socials.profile", ["url" => "#", "logo" => "/cdn/instagram.png", "name" => "Instagram", "username" => "gaspard_wski", "copy" => "https://www.instagram.com/gaspard_wski/"])
 	@include("components.socials.profile", ["url" => "#", "logo" => "/cdn/mail.png", "name" => "Mail (Personal)", "username" => "gascraft971@gmail.com", "copy" => "gascraft971@gmail.com"])
-	@include("components.socials.profile", ["url" => "#", "logo" => "/cdn/mail.png", "name" => "Mail (Work)", "username" => "gaspard.wierzbinski<br/>@gmail.com", "copy" => "contact@cpluspatch.com"])
+	@include("components.socials.profile", ["url" => "#", "logo" => "/cdn/mail.png", "name" => "Mail (Work)", "username" => "contact@cpluspatch.com", "copy" => "contact@cpluspatch.com"])
 	@include("components.socials.profile", ["url" => "#", "logo" => "/cdn/youtube.png", "name" => "YouTube", "username" => "CPlusPatch 2544", "copy" => "https://www.youtube.com/channel/UC-EH3na_o6uyVD6tmTZoaOA"])
 	@include("components.socials.profile", ["url" => "#", "logo" => "/cdn/dndbeyond.png", "name" => "D&D Beyond", "username" => "CPlusPatch4502", "copy" => "https://www.dndbeyond.com/members/CPlusPatch4502"])
 </div>
