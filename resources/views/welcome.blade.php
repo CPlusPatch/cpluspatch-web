@@ -12,13 +12,13 @@
             </span>
             <h1
                 class="font-bebas-neue uppercase text-6xl sm:text-8xl font-black flex flex-col leading-none dark:text-white text-gray-800">
-                Gaspard
+                CPlusPatch
                 <span class="text-5xl sm:text-7xl">
-                    Wierzbinski
+                    Web dev and gaming
                 </span>
             </h1>
-            <p class="text-sm sm:text-base text-gray-700 dark:text-white mt-8">
-                My projects and my stuff is here
+            <p class="text-sm sm:text-base text-gray-700 dark:text-white mt-8 font-mono">
+                Official page for my projects and stuff
             </p>
             <div class="flex mt-8">
                 <a href="#"

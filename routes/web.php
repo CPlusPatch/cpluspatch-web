@@ -17,6 +17,22 @@ Route::get('/', function () {
 Route::get("/socials", function() {
     return view("socials");
 });
+Route::get('/public/{$filename}', function ($filename)
+{
+    $path = public_path() . "/" . $filename;
+
+    if (!File::exists($path)) {
+        abort(404);
+    }
+
+    $file = File::get($path);
+    $type = File::mimeType($path);
+
+    $response = Response::make($file, 200);
+    $response->header("Content-Type", $type);
+
+    return $response;
+});
 Route::get('/cdn/{filename}', function ($filename)
 {
     $path = public_path() . "/cdn/" . $filename;
