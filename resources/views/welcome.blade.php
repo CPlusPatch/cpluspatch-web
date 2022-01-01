@@ -19,9 +19,9 @@ else $alert_cookie = false;
             <span class="w-20 h-2 bg-gray-800 dark:bg-white mb-12">
             </span>
             <h1
-                class="font-bebas-neue uppercase text-6xl sm:text-8xl font-black flex flex-col leading-none dark:text-white">
+                class="font-bebas-neue uppercase text-5xl sm:text-8xl font-black flex flex-col leading-none dark:text-white">
                 CPlusPatch
-                <span class="text-5xl sm:text-7xl">
+                <span class="text-4xl sm:text-7xl">
                     Web dev and gaming
                 </span>
             </h1>
