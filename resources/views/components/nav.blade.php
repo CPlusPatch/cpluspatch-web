@@ -11,14 +11,14 @@
 				<a href="/socials" class="py-2 px-6 flex">
 					Socials
 				</a>
-				<a href="#" class="py-2 px-6 flex">
+				<a href="/projects" class="py-2 px-6 flex">
 					Projects
 				</a>
-				<a href="#" class="py-2 px-6 flex">
+				<a href="/socials?use-this-page-you-fool=1" class="py-2 px-6 flex">
 					Contact
 				</a>
 			</nav>
-			<button class="lg:hidden flex flex-col ml-4">
+			<button class="lg:hidden flex flex-col ml-4" data-mobile-navbar-toggle="#mobileNavbarContent" data-toggled="false">
 				<span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
 				</span>
 				<span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
@@ -29,3 +29,32 @@
 		</div>
 	</div>
 </header>
+<nav id="mobileNavbarContent" class="px-6 font-thin text-white uppercase text-lg lg:flex items-center" style="display: none;">
+	<a href="/" class="py-2 px-6 flex">
+		Home
+	</a>
+	<a href="/socials" class="py-2 px-6 flex">
+		Socials
+	</a>
+	<a href="/projects" class="py-2 px-6 flex">
+		Projects
+	</a>
+	<a href="/socials?use-this-page-you-fool=1" class="py-2 px-6 flex">
+		Contact
+	</a>
+</nav>
+
+<script>
+	$(() => {
+		$("[data-mobile-navbar-toggle]").on("click", function() {
+			if (this.dataset.toggled == "false") {
+				this.dataset.toggled = "true";
+				$(this.dataset.mobileNavbarToggle).slideDown()
+			}
+			else {
+				this.dataset.toggled = "false";
+				$(this.dataset.mobileNavbarToggle).slideUp();
+			}
+		});
+	});
+</script>

@@ -17,7 +17,11 @@ Route::get('/', function () {
 Route::get("/socials", function() {
     return view("socials");
 });
-Route::get('/public/{$filename}', function ($filename)
+Route::get("/projects", function() {
+    return view("projects");
+});
+
+/* Route::get('/public/{$filename}', function ($filename)
 {
     $path = public_path() . "/" . $filename;
 
@@ -48,4 +52,4 @@ Route::get('/cdn/{filename}', function ($filename)
     $response->header("Content-Type", $type);
 
     return $response;
-});
+}); */

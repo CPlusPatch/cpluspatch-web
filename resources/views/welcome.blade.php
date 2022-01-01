@@ -4,6 +4,14 @@
 
 @section("content")
 
+<?php
+if (isset($_COOKIE["alpha-warning-dismissed"])) $alert_cookie = $_COOKIE["alpha-warning-dismissed"];
+else $alert_cookie = false;
+?>
+@if ($alert_cookie != true))
+    @include("components.warning-banner")
+@endif
+
 @include("components.nav")
 <div class="bg-gray-800 flex relative z-20 items-center overflow-hidden">
     <div class="container mx-auto px-6 flex relative py-16">
@@ -11,7 +19,7 @@
             <span class="w-20 h-2 bg-gray-800 dark:bg-white mb-12">
             </span>
             <h1
-                class="font-bebas-neue uppercase text-6xl sm:text-8xl font-black flex flex-col leading-none dark:text-white text-gray-800">
+                class="font-bebas-neue uppercase text-6xl sm:text-8xl font-black flex flex-col leading-none dark:text-white">
                 CPlusPatch
                 <span class="text-5xl sm:text-7xl">
                     Web dev and gaming
@@ -21,12 +29,12 @@
                 Official page for my projects and stuff
             </p>
             <div class="flex mt-8">
-                <a href="#"
+                <a href="/projects"
                     class="uppercase py-2 px-4 rounded-lg bg-indigo-500 border-2 border-transparent text-white text-md mr-4 hover:bg-indigo-400 transition-all duration-200">
                     Check out my stuff
                 </a>
                 <a href="/socials"
-                    class="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-indigo-500 text-indigo-500 dark:text-white hover:bg-indigo-500 hover:text-white text-md transition-all duration-200">
+                    class="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-indigo-500 text-white hover:bg-indigo-500 hover:text-white text-md transition-all duration-200">
                     My socials
                 </a>
             </div>
@@ -128,7 +136,7 @@
         <div class="mt-10 -mx-4 md:-mx-12 relative lg:mt-0 lg:col-start-2">
             <img src="/cdn/shaders.jpg" alt="illustration" class="relative mx-auto shadow-lg rounded w-auto"/>
         </div>
-        <div class="lg:col-start-1 md:pl-20">
+        <div class="lg:col-start-1 md:px-20 mt-8 lg:mt-0">
             <h4 class="text-3xl leading-8 font-extrabold text-white tracking-tight sm:leading-9">
                 My experience with Minecraft servers
             </h4>

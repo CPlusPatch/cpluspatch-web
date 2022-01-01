@@ -23,11 +23,11 @@
 </div>
 
 <script>
-	document.querySelectorAll("[data-copy]").forEach(element => {
-		element.onclick = function() {
-			navigator.clipboard.writeText(element.dataset.copy);
-			element.textContent = "Copied!"
-		}
+	$(() => {
+		$("[data-copy]").on("click", function() {
+			navigator.clipboard.writeText(this.dataset.copy);
+			$(this).text("Copied!");
+		})
 	});
 </script>
 @endsection
