@@ -5,10 +5,14 @@
 @section("content")
 
 <?php
-if (isset($_COOKIE["alpha-warning-dismissed"])) $alert_cookie = $_COOKIE["alpha-warning-dismissed"];
-else $alert_cookie = false;
+if (isset($_COOKIE["alpha-warning-dismissed"])) {
+    $alert_cookie = $_COOKIE["alpha-warning-dismissed"];
+}
+else {
+    $alert_cookie = false;
+}
 ?>
-@if ($alert_cookie != true))
+@if ($alert_cookie != true)
     @include("components.warning-banner")
 @endif
 
