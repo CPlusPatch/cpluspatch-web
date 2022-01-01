@@ -28,7 +28,7 @@ else $alert_cookie = false;
             <p class="text-sm sm:text-base text-gray-700 dark:text-white mt-8 font-mono">
                 Official page for my projects and stuff
             </p>
-            <div class="flex mt-8">
+            <div class="flex flex-wrap mt-8 gap-4">
                 <a href="/projects"
                     class="uppercase py-2 px-4 rounded-lg bg-indigo-500 border-2 border-transparent text-white text-md mr-4 hover:bg-indigo-400 transition-all duration-200">
                     Check out my stuff
