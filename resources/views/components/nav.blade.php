@@ -26,6 +26,9 @@
 				<span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
 				</span>
 			</button>
+			<a href="#" class="block relative">
+				<img alt="profil" src="/images/person/1.jpg" class="mx-auto object-cover rounded-lg h-16 w-16 "/>
+			</a>
 		</div>
 	</div>
 </header>

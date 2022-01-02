@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,42 +16,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get("/socials", function() {
-    return view("socials");
-});
-Route::get("/projects", function() {
-    return view("projects");
-});
 
-/* Route::get('/public/{$filename}', function ($filename)
-{
-    $path = public_path() . "/" . $filename;
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-    if (!File::exists($path)) {
-        abort(404);
-    }
-
-    $file = File::get($path);
-    $type = File::mimeType($path);
-
-    $response = Response::make($file, 200);
-    $response->header("Content-Type", $type);
-
-    return $response;
-});
-Route::get('/cdn/{filename}', function ($filename)
-{
-    $path = public_path() . "/cdn/" . $filename;
-
-    if (!File::exists($path)) {
-        abort(404);
-    }
-
-    $file = File::get($path);
-    $type = File::mimeType($path);
-
-    $response = Response::make($file, 200);
-    $response->header("Content-Type", $type);
-
-    return $response;
-}); */
+require __DIR__.'/auth.php';
