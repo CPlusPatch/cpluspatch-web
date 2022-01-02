@@ -14,7 +14,7 @@ class AddPfpToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->uuid("profile-image");
+            $table->uuid("profile_image")->default("03bf2b0e-014f-492b-b311-16cb26d13f20");
         });
     }
 
@@ -26,7 +26,7 @@ class AddPfpToUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('profile-image');
+            $table->dropColumn('profile_image');
         });
     }
 }
