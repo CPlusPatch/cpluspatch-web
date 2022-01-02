@@ -44,7 +44,7 @@ else {
             </div>
         </div>
         <div class="hidden sm:block sm:w-1/3 lg:w-3/5 relative">
-            <img src="/cdn/hero.png" class="w-xl md:w-lg m-auto translate-x-56" />
+            <img src="/cdn/hero2.png" class="w-xl md:w-lg m-auto translate-x-56" />
         </div>
     </div>
 
@@ -210,5 +210,5 @@ else {
     </div>
 </div>
 
-
+@include("components.footer")
 @endsection
