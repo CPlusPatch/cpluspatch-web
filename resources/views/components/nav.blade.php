@@ -8,9 +8,9 @@
 				<a href="/" class="py-2 px-6 flex">
 					Home
 				</a>
-				<a href="/socials" class="py-2 px-6 flex">
+				{{-- <a href="/socials" class="py-2 px-6 flex">
 					Socials
-				</a>
+				</a> --}}
 				<a href="/projects" class="py-2 px-6 flex">
 					Projects
 				</a>
@@ -36,14 +36,13 @@
 					<img alt="Profile image" src="/cdn/{{ Auth::user()->profile_image }}.jpg"
 						class="mx-auto object-cover rounded-sm h-8 w-8" />
 				</button>
-				<div id="profileOptionsDropdown"
-					class="origin-top-right flex justify-center items-center dropdown-menu z-40 absolute right-0 hidden rounded-tr-none">
+				<div id="profileOptionsDropdown" class="origin-top-right flex justify-center items-center dropdown-menu z-40 absolute right-0 hidden rounded-tr-none">
 					<div class="h-48 w-full absolute flex justify-center items-center">
 						<img class="object-cover h-20 w-20 rounded-full"
 							src="/cdn/{{ Auth::user()->profile_image }}.jpg" alt="Profile image" />
 					</div>
 
-					<div class="h-96 mx-4 w-full bg-gray-400 rounded-lg shadow-md sm:w-80 mx-0">
+					<div class="h-96 w-full bg-gray-400 rounded-lg shadow-md sm:w-80 mx-0">
 						<div class="h-1/4 w-full flex justify-between items-baseline px-4 py-2">
 							<h1 class="text-white">Profile</h1>
 							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -69,7 +68,7 @@
 								<h1 class="text-gray-500 text-sm">{{  Auth::user()->email }}</h1>
 							</div>
 							<div
-								class="container flex flex-col mx-auto w-full items-center justify-center w-80 my-auto">
+								class="container flex flex-col mx-auto w-full items-center justify-center my-auto">
 								<ul class="flex flex-col w-5/6">
 									<li
 										class="border-gray-400 flex flex-row mb-2 md:shadow-sm md:hover:shadow-lg transition-all duration-800">
@@ -127,9 +126,9 @@
 	<a href="/" class="py-2 px-6 flex">
 		Home
 	</a>
-	<a href="/socials" class="py-2 px-6 flex">
+	{{-- <a href="/socials" class="py-2 px-6 flex">
 		Socials
-	</a>
+	</a> --}}
 	<a href="/projects" class="py-2 px-6 flex">
 		Projects
 	</a>
