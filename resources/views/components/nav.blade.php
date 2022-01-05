@@ -34,55 +34,27 @@
 			<div class="relative inline-block text-left">
 				<button data-gw-toggle="dropdown" data-toggles="#profileOptionsDropdown" data-toggled="false">
 					<img alt="Profile image" src="/cdn/{{ Auth::user()->profile_image }}.jpg"
-						class="mx-auto object-cover rounded-sm h-8 w-8" />
+						class="mx-auto object-cover rounded-full h-8 w-8" />
 				</button>
-				<div id="profileOptionsDropdown" class="origin-top-right flex justify-center items-center dropdown-menu z-40 absolute right-0 hidden rounded-tr-none">
-					<div class="h-48 w-full absolute flex justify-center items-center">
-						<img class="object-cover h-20 w-20 rounded-full"
-							src="/cdn/{{ Auth::user()->profile_image }}.jpg" alt="Profile image" />
-					</div>
+				<div id="profileOptionsDropdown" class="origin-top-right flex justify-center items-center dropdown-menu z-40 absolute right-0 hidden w-40">
+					<div class="w-full rounded-lg shadow-md mx-0" style="background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );">
 
-					<div class="h-96 w-full bg-gray-400 rounded-lg shadow-md sm:w-80 mx-0">
-						<div class="h-1/4 w-full flex justify-between items-baseline px-4 py-2">
-							<h1 class="text-white">Profile</h1>
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-								stroke="white">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-									d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-							</svg>
-						</div>
-
-						<div class="bg-white h-3/4 w-full rounded-lg flex flex-col justify-start items-center">
-							{{-- <div class="w-full h-1/2 flex justify-between items-center px-3 pt-2">
-								<div class="flex flex-col justify-center items-center">
-									<h1 class="text-gray-500 text-xs">——</h1>
-									<h1 class="text-gray-600 text-sm">——</h1>
-								</div>
-								<div class="flex flex-col justify-center items-center">
-									<h1 class="text-gray-500 text-xs">——</h1>
-									<h1 class="text-gray-600 text-sm">——</h1>
-								</div>
-							</div> --}}
-							<div class="w-full h-1/6 flex flex-col justify-center items-center mt-10">
-								<h1 class="text-gray-700 font-bold">{{ Auth::user()->name }}</h1>
-								<h1 class="text-gray-500 text-sm">{{  Auth::user()->email }}</h1>
-							</div>
+						<div class="w-full rounded-lg flex flex-col justify-start items-center" style="background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );">
 							<div
 								class="container flex flex-col mx-auto w-full items-center justify-center my-auto">
-								<ul class="flex flex-col w-5/6">
+								<ul class="flex flex-col w-11/12">
 									<li
-										class="border-gray-400 flex flex-row mb-2 md:shadow-sm md:hover:shadow-lg transition-all duration-800">
+										class="flex flex-row mt-2 mb-2 md:shadow-sm md:hover:shadow-lg transition-all duration-800">
 										<div
-											class="shadow border select-none cursor-pointer bg-gray-600 rounded-md flex flex-1 items-center p-4">
+											class="shadow select-none cursor-pointer bg-gray-800 rounded-md flex flex-1 items-center px-4 py-2">
 											<div class="flex flex-col w-6 h-6 justify-center items-center mr-4">
 												<a href="#" class="block relative">
-													<i
-														class="bi bi-image mx-auto object-cover rounded-full h-10 w-10 text-white"></i>
+													<i class="bi bi-image mx-auto object-cover rounded-full h-10 w-10 text-white"></i>
 												</a>
 											</div>
-											<div class="flex-1 pl-1 md:mr-16">
+											<div class="flex-1 pl-1">
 												<div class="font-medium text-white">
-													Profile
+													Settings
 												</div>
 											</div>
 										</div>
@@ -91,17 +63,16 @@
 										@csrf
 
 										<li
-											class="border-gray-400 flex flex-row mb-2 md:shadow-sm md:hover:shadow-lg hover:border-red-600 transition-all duration-800">
+											class="flex flex-row mb-2 md:shadow-sm md:hover:shadow-lg transition-all">
 											<div
-												class="shadow border select-none cursor-pointer bg-gray-600 hover:bg-red-600 rounded-md flex flex-1 items-center p-4 transition-all transition-800"
+												class="shadow select-none cursor-pointer bg-gray-800 hover:bg-red-600 rounded-md flex flex-1 items-center px-4 py-2 transition-all duration-1000"
 												onclick="event.preventDefault(); this.closest('form').submit();">
 												<div class="flex flex-col w-6 h-6 justify-center items-center mr-4">
 													<a href="#" class="block relative">
-														<i
-															class="bi bi-box-arrow-right mx-auto object-cover rounded-full h-10 w-10 text-white"></i>
+														<i class="bi bi-box-arrow-right mx-auto object-cover rounded-full h-10 w-10 text-white"></i>
 													</a>
 												</div>
-												<div class="flex-1 pl-1 md:mr-16">
+												<div class="flex-1 pl-1">
 													<div class="font-medium text-white">
 														Logout
 													</div>
