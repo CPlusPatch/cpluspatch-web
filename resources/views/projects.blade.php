@@ -19,40 +19,13 @@ else {
 <div class="bg-gray-800 flex relative z-20 items-center overflow-hidden">
 	<div class="container mx-auto px-6 relative py-16">
 		<div class="pb-10">
-			<h1 class="font-black text-white uppercase  text-3xl sm:text-8xl font-bebas-neue">I'm working on</h1>
+			<h1 class="font-black text-white uppercase  text-3xl md:text-8xl font-bebas-neue">I'm working on</h1>
 		</div>
-
-		<div class="overflow-hidden shadow-lg rounded-lg h-90 w-80 cursor-pointer m-auto">
-			<a href="#" class="w-full block h-full">
-				<img alt="blog photo" src="/cdn/cppwebmaker_bg.jpg" class="max-h-40 w-full object-cover" />
-				<div class="bg-gray-700 w-full p-4">
-					<p class="text-indigo-500 text-md font-medium">
-						Project
-					</p>
-					<p class="text-white text-xl font-medium mb-2">
-						CPlusPatch WebMaker
-					</p>
-					<p class="text-gray-300 font-light text-md">
-						One of my first big projects, rewritten many times as I gain more skills and now being remade in Laravel and TailwindCSS (ETA a few months)
-					</p>
-					<div class="flex items-center mt-4">
-						<div href="#" class="block relative">
-							<img alt="Profile" src="/cdn/d5ac37a5-b776-437b-9034-e7e2772502c0.jpg"
-								class="mx-auto object-cover rounded-full h-10 w-10"/>
-						</div>
-						<div class="flex flex-col justify-between ml-4 text-sm">
-							<p class="text-white">
-								CPlusPatch
-							</p>
-							<p class="text-gray-300">
-								2018 - 2022
-							</p>
-						</div>
-					</div>
-				</div>
-			</a>
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+			@include("components.projects.project-card", ["bg" => "/cdn/cppwebmaker_bg.jpg", "category" => "Project", "title" => "CPlusPatch WebMaker", "desc" => "One of my first big projects, rewritten many times as I gain more skills and now being remade in Laravel and TailwindCSS (ETA a few months).", "date" => "2019 - 2022"])
+			@include("components.projects.project-card", ["bg" => "/cdn/cppweb-banner.jpg", "category" => "Project", "title" => "CPlusPatch.com", "desc" => "My own website (developed in Laravel and TailwindCSS). I use it to keep all of my projects and for my public facade.", "date" => "2021 - 2022"])
+			@include("components.projects.project-card", ["bg" => "/cdn/mc-server-banner.png", "category" => "Project", "title" => "Minecraft server", "desc" => "Yes, I do run my own Minecraft server. If you are interested in it, please feel free to mail me or PM me on Discord. The server is Bedrock compatible.", "date" => "2021 - 2022"])
 		</div>
-
 	</div>
 </div>
 
