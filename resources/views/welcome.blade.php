@@ -37,7 +37,7 @@ else {
                     class="uppercase py-2 px-4 rounded-lg bg-indigo-500 border-2 border-transparent text-white text-md mr-4 hover:bg-indigo-400 transition-all duration-200">
                     Check out my stuff
                 </a>
-                <a href="/socials"
+                <a href="#footer"
                     class="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-indigo-500 text-white hover:bg-indigo-500 hover:text-white text-md transition-all duration-200">
                     My socials
                 </a>
@@ -64,7 +64,7 @@ else {
                     I can use many different frameworks and languages, as well as numerous design concepts such as oriented-object programming and proper UI/UX design
                 </p>
                 <ul class="mt-8 md:grid md:grid-cols-2 gap-6 font-mono">
-                    <li class="mt-6 lg:mt-0">
+                    <li class="mt-6 lg:mt-0 hover:scale-105 transition-all duration-500">
                         <div class="flex">
                             <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-500 drark:bg-transparent">
                                 <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -77,7 +77,7 @@ else {
                             </span>
                         </div>
                     </li>
-                    <li class="mt-6 lg:mt-0">
+                    <li class="mt-6 lg:mt-0 hover:scale-105 transition-all duration-500">
                         <div class="flex">
                             <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-500 drark:bg-transparent">
                                 <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -90,7 +90,7 @@ else {
                             </span>
                         </div>
                     </li>
-                    <li class="mt-6 lg:mt-0">
+                    <li class="mt-6 lg:mt-0 hover:scale-105 transition-all duration-500">
                         <div class="flex">
                             <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-500 drark:bg-transparent">
                                 <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -103,7 +103,7 @@ else {
                             </span>
                         </div>
                     </li>
-                    <li class="mt-6 lg:mt-0">
+                    <li class="mt-6 lg:mt-0 hover:scale-105 transition-all duration-500">
                         <div class="flex">
                             <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-500 drark:bg-transparent">
                                 <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -121,12 +121,12 @@ else {
             <div class="mt-10 lg:-mx-4 relative relative-20 lg:mt-0 lg:col-start-1">
                 <div class="relative space-y-4">
                     <div class="flex items-end justify-center lg:justify-start space-x-4">
-                        <img class="rounded-lg shadow-lg w-32 md:w-56" width="200" src="/cdn/laravel.jpg" alt="1"/>
-                        <img class="rounded-lg shadow-lg w-40 md:w-64" width="260" src="/cdn/swiftui.jpeg" alt="2"/>
+                        <img class="rounded-lg shadow-lg w-32 md:w-56 hover:scale-105 transition-all duration-500" width="200" src="/cdn/laravel.jpg" alt="1"/>
+                        <img class="rounded-lg shadow-lg w-40 md:w-64 hover:scale-105 transition-all duration-500" width="260" src="/cdn/swiftui.jpeg" alt="2"/>
                     </div>
                     <div class="flex items-start justify-center lg:justify-start space-x-4 ml-12">
-                        <img class="rounded-lg shadow-lg w-24 md:w-40" width="170" src="/cdn/linux.jpg" alt="3"/>
-                        <img class="rounded-lg shadow-lg w-32 md:w-56" width="200" src="/cdn/javascript.png" alt="4"/>
+                        <img class="rounded-lg shadow-lg w-24 md:w-40 hover:scale-105 transition-all duration-500" width="170" src="/cdn/linux.jpg" alt="3"/>
+                        <img class="rounded-lg shadow-lg w-32 md:w-56 hover:scale-105 transition-all duration-500" width="200" src="/cdn/javascript.png" alt="4"/>
                     </div>
                 </div>
             </div>
@@ -145,7 +145,7 @@ else {
                 My experience with Minecraft servers
             </h4>
             <ul class="mt-10">
-                <li>
+                <li class="hover:translate-x-5 transition-all duration-500">
                     <div class="flex">
                         <div class="flex-shrink-0">
                             <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
@@ -158,13 +158,13 @@ else {
                             <h5 class="text-lg leading-6 text-white font-bold">
                                 Modding
                             </h5>
-                            <p class="mt-2 text-base leading-6 text-gray-300">
+                            <p class="mt-2 text-base leading-6 text-gray-300 font-mono">
                                 I can install and deploy mods on server or multiplayer. I understand how mixins work and how to properly configure mods to work well with the game.
                             </p>
                         </div>
                     </div>
                 </li>
-                <li class="mt-10">
+                <li class="mt-10 hover:translate-x-5 transition-all duration-500">
                     <div class="flex">
                         <div class="flex-shrink-0">
                             <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
@@ -178,13 +178,13 @@ else {
                             <h5 class="text-lg leading-6 text-white font-bold">
                                 Plugins
                             </h5>
-                            <p class="mt-2 text-base leading-6 text-gray-300">
+                            <p class="mt-2 text-base leading-6 text-gray-300 font-mono">
                                 I have good knowledge of plugins and general administration of Minecraft servers. I have experience with managing a community (see my current running server)
                             </p>
                         </div>
                     </div>
                 </li>
-                <li class="mt-10">
+                <li class="mt-10 hover:translate-x-5 transition-all duration-500">
                     <div class="flex">
                         <div class="flex-shrink-0">
                             <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
@@ -198,7 +198,7 @@ else {
                             <h5 class="text-lg leading-6 text-white font-bold">
                                 Troubleshooting &amp; fixing issues
                             </h5>
-                            <p class="mt-2 text-base leading-6 text-gray-300">
+                            <p class="mt-2 text-base leading-6 text-gray-300 font-mono">
                                 I am able to quickly diagnose issues and to take steps towards resolving them, as well as preventing them from happening in the first place
                             </p>
                         </div>

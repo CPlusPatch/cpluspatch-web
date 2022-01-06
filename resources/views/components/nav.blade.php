@@ -14,9 +14,9 @@
 				<a href="/projects" class="py-2 px-6 flex">
 					Projects
 				</a>
-				<a href="/socials?use-this-page-you-fool=1" class="py-2 px-6 flex">
+				{{-- <a href="/socials?use-this-page-you-fool=1" class="py-2 px-6 flex">
 					Contact
-				</a>
+				</a> --}}
 				@if(!Auth::check())
 				{{-- <a href="{{ route("login") }}" class="py-2 px-6 flex">Login</a> --}}
 				@endif
@@ -46,8 +46,8 @@
 									<li
 										class="flex flex-row mt-2 mb-2 md:shadow-sm md:hover:shadow-lg transition-all duration-800">
 										<div
-											class="shadow select-none cursor-pointer bg-gray-800 rounded-md flex flex-1 items-center px-4 py-2">
-											<div class="flex flex-col w-6 h-6 justify-center items-center mr-4">
+											class="appearance-none shadow select-none cursor-pointer bg-gray-800 rounded-md flex flex-1 items-center px-4 py-2">
+											<div class="flex flex$-col w-6 h-6 justify-center items-center mr-4">
 												<a href="#" class="block relative">
 													<i class="bi bi-image mx-auto object-cover rounded-full h-10 w-10 text-white"></i>
 												</a>
@@ -103,9 +103,9 @@
 	<a href="/projects" class="py-2 px-6 flex">
 		Projects
 	</a>
-	<a href="/socials?use-this-page-you-fool=1" class="py-2 px-6 flex">
+	{{-- <a href="/socials?use-this-page-you-fool=1" class="py-2 px-6 flex">
 		Contact
-	</a>
+	</a> --}}
 </nav>
 
 <script>

@@ -1,5 +1,5 @@
 
-<footer class="bg-gray-800 w-full py-8">
+<footer class="bg-gray-800 w-full py-8" id="footer">
     <div class="max-w-screen-xl mx-auto px-4">
         <div class="pt-8 flex max-w-xs mx-auto items-center justify-between">
             <a href="https://github.com/CPlusPatch" class="text-gray-400 hover:text-white transition-colors duration-200">
