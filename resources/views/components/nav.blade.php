@@ -21,16 +21,15 @@
 				{{-- <a href="{{ route("login") }}" class="py-2 px-6 flex">Login</a> --}}
 				@endif
 			</nav>
-			<button class="lg:hidden flex flex-col mx-4" data-mobile-navbar-toggle="#mobileNavbarContent"
-				data-toggled="false">
-				<span class="w-6 h-1 bg-white mb-1">
+			<button class="lg:hidden flex flex-col mx-4" data-mobile-navbar-toggle="#mobileNavbarContent" data-toggled="false">
+				<span class="w-6 h-1 bg-white mb-1 rounded-md">
 				</span>
-				<span class="w-6 h-1 bg-white mb-1">
+				<span class="w-6 h-1 bg-white mb-1 rounded-md">
 				</span>
-				<span class="w-6 h-1 bg-white mb-1">
+				<span class="w-6 h-1 bg-white mb-1 rounded-md">
 				</span>
 			</button>
-			@if (Auth::check())
+			@auth
 			<div class="relative inline-block text-left">
 				<button data-gw-toggle="dropdown" data-toggles="#profileOptionsDropdown" data-toggled="false">
 					<img alt="Profile image" src="/cdn/{{ Auth::user()->profile_image }}.jpg"
@@ -43,14 +42,12 @@
 							<div
 								class="container flex flex-col mx-auto w-full items-center justify-center my-auto">
 								<ul class="flex flex-col w-11/12">
-									<li
-										class="flex flex-row mt-2 mb-2 md:shadow-sm md:hover:shadow-lg transition-all duration-800">
-										<div
-											class="appearance-none shadow select-none cursor-pointer bg-gray-800 rounded-md flex flex-1 items-center px-4 py-2">
-											<div class="flex flex$-col w-6 h-6 justify-center items-center mr-4">
-												<a href="#" class="block relative">
+									<a href="/account/settings" class="flex mt-2 mb-2 md:shadow-sm md:hover:shadow-lg transition-all duration-800">
+										<div class="appearance-none shadow select-none cursor-pointer bg-blue-800 rounded-md flex flex-1 items-center px-4 py-2">
+											<div class="flex w-6 h-6 justify-center items-center mr-4">
+												<div class="block relative">
 													<i class="bi bi-image mx-auto object-cover rounded-full h-10 w-10 text-white"></i>
-												</a>
+												</div>
 											</div>
 											<div class="flex-1 pl-1">
 												<div class="font-medium text-white">
@@ -58,19 +55,19 @@
 												</div>
 											</div>
 										</div>
-									</li>
+									</a>
 									<form method="POST" action="{{ route('logout') }}">
 										@csrf
 
 										<li
 											class="flex flex-row mb-2 md:shadow-sm md:hover:shadow-lg transition-all">
 											<div
-												class="shadow select-none cursor-pointer bg-gray-800 hover:bg-red-600 rounded-md flex flex-1 items-center px-4 py-2 transition-all duration-1000"
+												class="shadow select-none cursor-pointer bg-blue-800 hover:bg-red-600 rounded-md flex flex-1 items-center px-4 py-2 transition-all duration-1000"
 												onclick="event.preventDefault(); this.closest('form').submit();">
 												<div class="flex flex-col w-6 h-6 justify-center items-center mr-4">
-													<a href="#" class="block relative">
+													<div class="block relative">
 														<i class="bi bi-box-arrow-right mx-auto object-cover rounded-full h-10 w-10 text-white"></i>
-													</a>
+													</div>
 												</div>
 												<div class="flex-1 pl-1">
 													<div class="font-medium text-white">
@@ -88,7 +85,7 @@
 				</div>
 				@include("components.dropdowns.dropdown")
 			</div>
-			@endif
+			@endauth
 		</div>
 	</div>
 </header>

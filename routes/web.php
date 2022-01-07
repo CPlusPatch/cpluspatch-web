@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,7 +29,10 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::get("/account/settings", function() {
-    return view("account.profile-settings");
+    if (Auth::check()) {
+        return view("account.profile-settings");
+    }
+    return abort(401);
 });
 
 require __DIR__.'/auth.php';
