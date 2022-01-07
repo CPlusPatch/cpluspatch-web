@@ -1,4 +1,4 @@
-<div class="overflow-hidden shadow-lg rounded-lg h-90 w-80 cursor-pointer m-auto">
+<div class="overflow-hidden shadow-lg rounded-lg h-90 w-80 cursor-pointer m-auto hover:scale-105 hover:shadow-3xl hover:-translate-y-5 transition-all duration-1000">
 	<a href="#" class="w-full block h-full">
 		<img alt="blog photo" src="{{ $bg }}" class="max-h-40 w-full object-cover" />
 		<div class="bg-gray-700 w-full p-4">

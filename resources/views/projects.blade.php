@@ -23,7 +23,7 @@ else {
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 			@include("components.projects.project-card", ["bg" => "/cdn/cppwebmaker_bg.jpg", "category" => "Project", "title" => "CPlusPatch WebMaker", "desc" => "One of my first big projects, rewritten many times as I gain more skills and now being remade in Laravel and TailwindCSS (ETA a few months).", "date" => "2019 - 2022"])
-			@include("components.projects.project-card", ["bg" => "/cdn/cppweb-banner.jpg", "category" => "Project", "title" => "CPlusPatch.com", "desc" => "My own website (developed in Laravel and TailwindCSS). I use it to keep all of my projects and for my public facade.", "date" => "2021 - 2022"])
+			@include("components.projects.project-card", ["bg" => "/cdn/cppweb-banner.jpg", "category" => "Project", "title" => "CPlusPatch.com", "desc" => "My own website (developed in Laravel and TailwindCSS). I use it to keep all of my projects and for my public facade. My latest project.", "date" => "2021 - 2022"])
 			@include("components.projects.project-card", ["bg" => "/cdn/mc-server-banner.png", "category" => "Project", "title" => "Minecraft server", "desc" => "Yes, I do run my own Minecraft server. If you are interested in it, please feel free to mail me or PM me on Discord. The server is Bedrock compatible.", "date" => "2021 - 2022"])
 		</div>
 	</div>

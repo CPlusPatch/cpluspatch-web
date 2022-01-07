@@ -24,22 +24,22 @@ else {
             </span>
             <h1
                 class="font-bebas-neue uppercase text-5xl sm:text-8xl font-black flex flex-col leading-none text-white">
-                CPlusPatch
+                {{ __("CPlusPatch") }}
                 <span class="text-4xl sm:text-7xl">
-                    Web dev and gaming
+                    {{ __("Web dev and gaming") }}
                 </span>
             </h1>
             <p class="text-sm sm:text-base text-white mt-8 font-mono">
-                Official page for my projects and stuff
+                {{ __("Official page for my projects and stuff") }}
             </p>
             <div class="flex flex-wrap mt-8 gap-4">
                 <a href="/projects"
-                    class="uppercase py-2 px-4 rounded-lg bg-indigo-500 border-2 border-transparent text-white text-md mr-4 hover:bg-indigo-400 transition-all duration-200">
-                    Check out my stuff
+                    class="uppercase py-2 px-4 rounded-lg bg-indigo-500 border-2 border-transparent text-white text-md mr-4 hover:bg-indigo-400 transition-all duration-200 hover:scale-105">
+                    {{ __("Check out my stuff") }}
                 </a>
                 <a href="#footer"
-                    class="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-indigo-500 text-white hover:bg-indigo-500 hover:text-white text-md transition-all duration-200">
-                    My socials
+                    class="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-indigo-500 text-white hover:bg-indigo-500 hover:text-white text-md transition-all duration-200 hover:scale-105">
+                    {{ __("My socials") }}
                 </a>
             </div>
         </div>
@@ -55,13 +55,13 @@ else {
         <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div class="lg:col-start-2 lg:max-w-2xl ml-auto">
                 <p class="text-xl leading-6 text-indigo-500 font-semibold uppercase">
-                    Skills
+                    {{ __("Skills") }}
                 </p>
                 <h4 class="mt-2 text-3xl leading-8 font-extrabold text-white sm:text-3xl sm:leading-9 font-bebas-neue">
-                    Multiple languages and many core design elements
+                    {{ __("Multiple languages and many core design elements") }}
                 </h4>
                 <p class="mt-4 text-lg leading-6 text-gray-300 font-mono">
-                    I can use many different frameworks and languages, as well as numerous design concepts such as oriented-object programming and proper UI/UX design
+                    {{ __("I can use many different frameworks and languages, as well as numerous design concepts such as oriented-object programming and proper UI/UX design") }}
                 </p>
                 <ul class="mt-8 md:grid md:grid-cols-2 gap-6 font-mono">
                     <li class="mt-6 lg:mt-0 hover:scale-105 transition-all duration-500">
@@ -73,7 +73,7 @@ else {
                                 </svg>
                             </span>
                             <span class="ml-4 text-base leading-6 font-medium text-gray-200">
-                                PHP, Python, C++, SwiftUI, MySQL
+                                {{ __("PHP, Python, C++, SwiftUI, MySQL") }}
                             </span>
                         </div>
                     </li>
@@ -86,7 +86,7 @@ else {
                                 </svg>
                             </span>
                             <span class="ml-4 text-base leading-6 font-medium text-gray-200">
-                                HTML, CSS, JavaScript
+                                {{ __("HTML, CSS, JavaScript") }}
                             </span>
                         </div>
                     </li>
@@ -99,7 +99,7 @@ else {
                                 </svg>
                             </span>
                             <span class="ml-4 text-base leading-6 font-medium text-gray-200">
-                                jQuery, Zepto.js, Bootstrap, Tailwind CSS, Laravel
+                                {{ __("jQuery, Zepto.js, Bootstrap, Tailwind CSS, Laravel") }}
                             </span>
                         </div>
                     </li>
@@ -112,7 +112,7 @@ else {
                                 </svg>
                             </span>
                             <span class="ml-4 text-base leading-6 font-medium text-gray-200">
-                                Extensive knowledge of Linux and its innerworkings
+                                {{ __("Extensive knowledge of Linux and its innerworkings") }}
                             </span>
                         </div>
                     </li>
@@ -142,7 +142,7 @@ else {
         </div>
         <div class="lg:col-start-1 md:px-20 mt-8 lg:mt-0">
             <h4 class="text-3xl leading-8 font-extrabold text-white tracking-tight sm:leading-9">
-                My experience with Minecraft servers
+                {{ __("My experience with Minecraft servers") }}
             </h4>
             <ul class="mt-10">
                 <li class="hover:translate-x-5 transition-all duration-500">
@@ -156,10 +156,10 @@ else {
                         </div>
                         <div class="ml-4">
                             <h5 class="text-lg leading-6 text-white font-bold">
-                                Modding
+                                {{ __("Modding") }}
                             </h5>
                             <p class="mt-2 text-base leading-6 text-gray-300 font-mono">
-                                I can install and deploy mods on server or multiplayer. I understand how mixins work and how to properly configure mods to work well with the game.
+                                {{ __("I can install and deploy mods on server or multiplayer. I understand how mixins work and how to properly configure mods to work well with the game.") }}
                             </p>
                         </div>
                     </div>
@@ -176,10 +176,10 @@ else {
                         </div>
                         <div class="ml-4">
                             <h5 class="text-lg leading-6 text-white font-bold">
-                                Plugins
+                                {{ __("Plugins") }}
                             </h5>
                             <p class="mt-2 text-base leading-6 text-gray-300 font-mono">
-                                I have good knowledge of plugins and general administration of Minecraft servers. I have experience with managing a community (see my current running server)
+                                {{ __("I have good knowledge of plugins and general administration of Minecraft servers. I have experience with managing a community (see my current running server)") }}
                             </p>
                         </div>
                     </div>
@@ -196,10 +196,10 @@ else {
                         </div>
                         <div class="ml-4">
                             <h5 class="text-lg leading-6 text-white font-bold">
-                                Troubleshooting &amp; fixing issues
+                                {{ __("Troubleshooting & fixing issues") }}
                             </h5>
                             <p class="mt-2 text-base leading-6 text-gray-300 font-mono">
-                                I am able to quickly diagnose issues and to take steps towards resolving them, as well as preventing them from happening in the first place
+                                {{ __("I am able to quickly diagnose issues and to take steps towards resolving them, as well as preventing them from happening in the first place") }}
                             </p>
                         </div>
                     </div>

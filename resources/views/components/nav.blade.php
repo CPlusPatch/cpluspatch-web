@@ -5,13 +5,13 @@
 		</div>
 		<div class="flex items-center">
 			<nav class="font-thin text-white uppercase text-lg lg:flex items-center hidden">
-				<a href="/" class="py-2 px-6 flex">
+				<a href="/" class="py-2 px-6 flex hover:scale-105 transition-all transition-200">
 					Home
 				</a>
 				{{-- <a href="/socials" class="py-2 px-6 flex">
 					Socials
 				</a> --}}
-				<a href="/projects" class="py-2 px-6 flex">
+				<a href="/projects" class="py-2 px-6 flex hover:scale-105 transition-all transition-200">
 					Projects
 				</a>
 				{{-- <a href="/socials?use-this-page-you-fool=1" class="py-2 px-6 flex">

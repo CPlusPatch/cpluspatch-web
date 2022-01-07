@@ -3,5 +3,5 @@
 @section("title", "Account settings")
 
 @section("content")
-a
+
 @endsection
