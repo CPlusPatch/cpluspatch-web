@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bcd1eac5a42877c88996336522d9f708",
+    "content-hash": "44041944dd1445abdf41447c2c4e4d0a",
     "packages": [
         {
             "name": "brick/math",
@@ -1659,6 +1659,63 @@
             "time": "2021-04-09T13:42:10+00:00"
         },
         {
+            "name": "philo/artisan-remote",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhiloNL/artisan-remote.git",
+                "reference": "bca5bb63784abb19c9b31cf2a1b2625a4377374f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhiloNL/artisan-remote/zipball/bca5bb63784abb19c9b31cf2a1b2625a4377374f",
+                "reference": "bca5bb63784abb19c9b31cf2a1b2625a4377374f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3.0|^8.0",
+                "sensiolabs/ansi-to-html": "^1.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^v5.14.0|^v6.9.0",
+                "phpunit/phpunit": "^9.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Philo\\ArtisanRemote\\ArtisanRemoteServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Philo\\ArtisanRemote\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Philo Hermans",
+                    "email": "me@philohermans.com"
+                }
+            ],
+            "description": "An HTTP API to interact with Laravel Artisan commands.",
+            "keywords": [
+                "api",
+                "artisan",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/PhiloNL/artisan-remote/issues",
+                "source": "https://github.com/PhiloNL/artisan-remote/tree/v1.0.2"
+            },
+            "time": "2021-01-24T10:41:06+00:00"
+        },
+        {
             "name": "phpoption/phpoption",
             "version": "1.8.1",
             "source": {
@@ -2179,6 +2236,60 @@
                 }
             ],
             "time": "2021-09-25T23:10:38+00:00"
+        },
+        {
+            "name": "sensiolabs/ansi-to-html",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sensiolabs/ansi-to-html.git",
+                "reference": "94a3145aae4733ff933c8910263ef56d1ae317a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sensiolabs/ansi-to-html/zipball/94a3145aae4733ff933c8910263ef56d1ae317a9",
+                "reference": "94a3145aae4733ff933c8910263ef56d1ae317a9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5"
+            },
+            "conflict": {
+                "twig/twig": "< 2.4.0"
+            },
+            "require-dev": {
+                "twig/twig": "^2.4 || ^3.0"
+            },
+            "suggest": {
+                "twig/twig": "Provides nice templating features"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SensioLabs\\AnsiConverter\\": "SensioLabs/AnsiConverter"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "A library to convert a text with ANSI codes to HTML",
+            "support": {
+                "issues": "https://github.com/sensiolabs/ansi-to-html/issues",
+                "source": "https://github.com/sensiolabs/ansi-to-html/tree/v1.2.1"
+            },
+            "time": "2020-10-06T05:48:55+00:00"
         },
         {
             "name": "sopamo/laravel-filepond",

@@ -12,6 +12,7 @@
         "fideloper/proxy": "^4.4",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.5",
+        "philo/artisan-remote": "^1.0",
         "sopamo/laravel-filepond": "^0.6.2"
     },
     "require-dev": {
