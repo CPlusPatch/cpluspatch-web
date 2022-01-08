@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\UserAvatarController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use Sopamo\LaravelFilepond\Http\Controllers\FilepondController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +35,12 @@ Route::get("/account/settings", function() {
         return view("account.profile-settings");
     }
     return abort(401);
+});
+Route::post("/account/change-avatar", [UserAvatarController::class, "update"]);
+
+Route::prefix('cdn')->group(function () {
+    Route::post('/upload', [FilepondController::class, 'upload'])->name('filepond.upload');
+    Route::delete('/delete', [FilepondController::class, 'delete'])->name('filepond.delete');
 });
 
 require __DIR__.'/auth.php';
