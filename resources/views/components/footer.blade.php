@@ -42,7 +42,7 @@
             </a>
         </div>
         <div class="text-center text-gray-200 pt-10 sm:pt-12 font-black flex items-center justify-center">
-            Created with love by CPlusPatch#9373 with Laravel and TailwindCSS
+            Created with <i class="mx-1 bi bi-heart-fill"></i> by CPlusPatch#9373 with Laravel and TailwindCSS
         </div>
     </div>
 </footer>
