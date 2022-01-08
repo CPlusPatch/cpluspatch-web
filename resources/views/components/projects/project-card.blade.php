@@ -1,5 +1,5 @@
 <div class="overflow-hidden shadow-lg rounded-lg h-90 w-80 cursor-pointer m-auto hover:scale-105 hover:shadow-3xl hover:-translate-y-5 transition-all duration-1000">
-	<a href="#" class="w-full block h-full">
+	<div class="w-full block h-full">
 		<img alt="blog photo" src="{{ $bg }}" class="max-h-40 w-full object-cover" />
 		<div class="bg-gray-700 w-full p-4">
 			<p class="text-indigo-500 text-md font-medium">
@@ -25,6 +25,11 @@
 					</p>
 				</div>
 			</div>
+			@if ($link ?? false)
+			<a href="{{ $link }}" type="button" class="flex justify-center mt-2 py-2 px-4 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg disabled:bg-gray-400 disabled:transition-none" disabled="{{ $disabled ?? "disabled" }}">
+				{{ $linkText ?? "Check it out" }}
+			</a>
+			@endif
 		</div>
-	</a>
+	</div>
 </div>

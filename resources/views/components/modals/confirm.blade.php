@@ -1,4 +1,4 @@
-<div id="{{ $id }}" class="fixed z-50 top-0 left-0 w-screen h-screen flex align-items-center justify-center bg-black/60" style="display: none;" data-toggled="false">
+<div id="{{ $id }}" class="fixed z-50 top-0 left-0 w-screen h-screen flex align-items-center justify-center bg-black/80" style="display: none;" data-toggled="false">
 	<div class="shadow-lg rounded-2xl p-4 bg-gray-800 w-64 m-auto">
 		<div class="w-full h-full text-center">
 			<div class="flex h-full flex-col justify-between">
