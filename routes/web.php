@@ -36,6 +36,7 @@ Route::get("/account/settings", function() {
     }
     return abort(401);
 });
+Route::view("/privacy-policy", "privacy-policy");
 Route::post("/account/change-avatar", [UserAvatarController::class, "update"]);
 
 Route::prefix('cdn')->group(function () {

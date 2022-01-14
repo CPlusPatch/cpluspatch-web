@@ -64,7 +64,7 @@ else {
                     {{ __("I can use many different frameworks and languages, as well as numerous design concepts such as oriented-object programming and proper UI/UX design") }}
                 </p>
                 <ul class="mt-8 md:grid md:grid-cols-2 gap-6 font-mono">
-                    <li class="mt-6 lg:mt-0 hover:scale-105 transition-all duration-500">
+                    <li class="mt-6 lg:mt-0 hover:scale-105 transition-all duration-200">
                         <div class="flex">
                             <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-500 drark:bg-transparent">
                                 <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -77,7 +77,7 @@ else {
                             </span>
                         </div>
                     </li>
-                    <li class="mt-6 lg:mt-0 hover:scale-105 transition-all duration-500">
+                    <li class="mt-6 lg:mt-0 hover:scale-105 transition-all duration-200">
                         <div class="flex">
                             <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-500 drark:bg-transparent">
                                 <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -90,7 +90,7 @@ else {
                             </span>
                         </div>
                     </li>
-                    <li class="mt-6 lg:mt-0 hover:scale-105 transition-all duration-500">
+                    <li class="mt-6 lg:mt-0 hover:scale-105 transition-all duration-200">
                         <div class="flex">
                             <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-500 drark:bg-transparent">
                                 <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -103,7 +103,7 @@ else {
                             </span>
                         </div>
                     </li>
-                    <li class="mt-6 lg:mt-0 hover:scale-105 transition-all duration-500">
+                    <li class="mt-6 lg:mt-0 hover:scale-105 transition-all duration-200">
                         <div class="flex">
                             <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-500 drark:bg-transparent">
                                 <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -121,12 +121,12 @@ else {
             <div class="mt-10 lg:-mx-4 relative relative-20 lg:mt-0 lg:col-start-1">
                 <div class="relative space-y-4">
                     <div class="flex items-end justify-center lg:justify-start space-x-4">
-                        <img class="rounded-lg shadow-lg w-32 md:w-56 hover:scale-105 transition-all duration-500" width="200" src="/cdn/laravel.jpg" alt="1"/>
-                        <img class="rounded-lg shadow-lg w-40 md:w-64 hover:scale-105 transition-all duration-500" width="260" src="/cdn/swiftui.jpeg" alt="2"/>
+                        <img class="rounded-lg shadow-lg w-32 md:w-56 hover:scale-105 transition-all duration-200" width="200" src="/cdn/laravel.jpg" alt="1"/>
+                        <img class="rounded-lg shadow-lg w-40 md:w-64 hover:scale-105 transition-all duration-200" width="260" src="/cdn/swiftui.jpeg" alt="2"/>
                     </div>
                     <div class="flex items-start justify-center lg:justify-start space-x-4 ml-12">
-                        <img class="rounded-lg shadow-lg w-24 md:w-40 hover:scale-105 transition-all duration-500" width="170" src="/cdn/linux.jpg" alt="3"/>
-                        <img class="rounded-lg shadow-lg w-32 md:w-56 hover:scale-105 transition-all duration-500" width="200" src="/cdn/javascript.png" alt="4"/>
+                        <img class="rounded-lg shadow-lg w-24 md:w-40 hover:scale-105 transition-all duration-200" width="170" src="/cdn/linux.jpg" alt="3"/>
+                        <img class="rounded-lg shadow-lg w-32 md:w-56 hover:scale-105 transition-all duration-200" width="200" src="/cdn/javascript.png" alt="4"/>
                     </div>
                 </div>
             </div>

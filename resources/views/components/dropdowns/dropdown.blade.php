@@ -2,11 +2,11 @@
 $(() => {
 	$("[data-gw-toggle=dropdown]").on("click", function() {
 		if (this.dataset.toggled == "false") {
-			$(this.dataset.toggles).slideDown();
+			$(this.dataset.toggles).addClass("flex").slideDown();
 			this.dataset.toggled = "true";
 		}
 		else {
-			$(this.dataset.toggles).slideUp();
+			$(this.dataset.toggles).slideUp().removeClass("flex");
 			this.dataset.toggled = "false";
 		}
 	});

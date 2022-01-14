@@ -35,7 +35,7 @@
 					<img alt="Profile image" src="/cdn/{{ Auth::user()->profile_image }}.jpg"
 						class="mx-auto object-cover rounded-full h-8 w-8" />
 				</button>
-				<div id="profileOptionsDropdown" class="origin-top-right flex justify-center items-center dropdown-menu z-40 absolute right-0 hidden w-40">
+				<div id="profileOptionsDropdown" class="origin-top-right justify-center items-center dropdown-menu z-40 absolute right-0 hidden w-40">
 					<div class="w-full rounded-lg shadow-md mx-0" style="background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );">
 
 						<div class="w-full rounded-lg flex flex-col justify-start items-center" style="background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );">
