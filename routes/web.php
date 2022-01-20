@@ -38,6 +38,7 @@ Route::get("/account/settings", function() {
 });
 Route::view("/privacy-policy", "privacy-policy");
 Route::post("/account/change-avatar", [UserAvatarController::class, "update"]);
+Route::redirect("/discord", "https://discord.com/api/oauth2/authorize?client_id=930810596839030795&permissions=8&scope=bot%20applications.commands", 301);
 
 Route::prefix('cdn')->group(function () {
     Route::post('/upload', [FilepondController::class, 'upload'])->name('filepond.upload');

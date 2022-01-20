@@ -6,12 +6,8 @@
 @include("components.nav")
 
 <?php
-if (isset($_COOKIE["beta-page-modal-dismissed"])) {
-    $betaModalCookie = $_COOKIE["beta-page-modal-dismissed"];
-}
-else {
-    $betaModalCookie = false;
-}
+if (isset($_COOKIE["beta-page-modal-dismissed"])) $betaModalCookie = $_COOKIE["beta-page-modal-dismissed"];
+else $betaModalCookie = false;
 ?>
 @if ($betaModalCookie != true)
 @include("components.modals.confirm", ["id" => "betaPageModal", "title" => "Page in construction", "text" => "This page is currently under construction", "btnConfirm" => "OK"])
