@@ -19,30 +19,6 @@ use Sopamo\LaravelFilepond\Http\Controllers\FilepondController;
 Route::get('/', function () {
     return view('welcome');
 });
-/* Route::get("/socials", function() {
-    return view("socials");
-}); */
-Route::get("/projects", function() {
-    return view("projects");
-});
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
-Route::get("/account/settings", function() {
-    if (Auth::check()) {
-        return view("account.profile-settings");
-    }
-    return abort(401);
-});
 Route::view("/privacy-policy", "privacy-policy");
-Route::post("/account/change-avatar", [UserAvatarController::class, "update"]);
-Route::redirect("/discord", "https://discord.com/api/oauth2/authorize?client_id=930810596839030795&permissions=8&scope=bot%20applications.commands", 301);
-
-Route::prefix('cdn')->group(function () {
-    Route::post('/upload', [FilepondController::class, 'upload'])->name('filepond.upload');
-    Route::delete('/delete', [FilepondController::class, 'delete'])->name('filepond.delete');
-});
-
-require __DIR__.'/auth.php';
+Route::redirect("/discord", "https://discord.com/api/oauth2/authorize?client_id=930810596839030795&permissions=1237420731510&scope=bot%20applications.commands", 301);
